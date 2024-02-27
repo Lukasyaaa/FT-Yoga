@@ -377,10 +377,10 @@ body._locked {
 }
 
 @media (any-hover: hover) {
-  .button_arrow {
+  .button_hover {
     position: relative;
   }
-  .button_arrow::after {
+  .button_hover::after {
     background-color: #fff;
     content: "";
     border-radius: 50%;
@@ -393,17 +393,17 @@ body._locked {
     transform: translate(-50%, -50%);
     transition: all 0.3s linear;
   }
-  .button_arrow span, .button_arrow::before {
+  .button_hover span, .button_hover::before {
     position: relative;
     z-index: 2;
   }
-  .button_arrow:hover span, .button_arrow:hover::before {
+  .button_hover:hover span, .button_hover:hover::before {
     background: linear-gradient(68deg, #FF62B7 14.39%, #9F53FF 79.59%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
-  .button_arrow:hover::after {
+  .button_hover:hover::after {
     border-radius: inherit;
     width: calc(100% + 1px);
     height: calc(100% + 1px);
