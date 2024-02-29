@@ -881,25 +881,25 @@ body._locked {
 }
 @media (max-width: 68.6875em) {
   .intro {
-    padding-top: 9.75rem;
+    padding-top: 8.5rem;
     padding-bottom: 3.4375rem;
   }
 }
 @media (max-width: 62em) {
   .intro {
-    padding-top: 8.25;
+    padding-top: 7.25rem;
     padding-bottom: 2.5rem;
   }
 }
 @media (max-width: 48em) {
   .intro {
-    padding-top: 7rem;
+    padding-top: 6rem;
     padding-bottom: 1.875rem;
   }
 }
 @media (max-width: 30em) {
   .intro {
-    padding-top: 5.25rem;
+    padding-top: 4.25rem;
   }
 }
 .intro .container {
