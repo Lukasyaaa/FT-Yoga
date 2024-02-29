@@ -16,29 +16,12 @@ document.addEventListener("DOMContentLoaded", () => {
         isSmaller768px = getComputedStyle(document.querySelector(".menu")).position == "fixed";
     }
 
-    if(document.querySelector(".intro")){
-        document.querySelector(".intro").style.cssText = `padding-top: calc(${document.querySelector(".header").offsetHeight}px + 3.125rem);`
-        if(isSmaller1098px){
-            document.querySelector(".intro").style.cssText = `padding-top: calc(${document.querySelector(".header").offsetHeight}px + 2.5rem);`
-        }
-        if(isSmaller992px){
-            document.querySelector(".intro").style.cssText = `padding-top: calc(${document.querySelector(".header").offsetHeight}px + 1rem);`
-        }
-        if(isSmaller768px && document.querySelector(".menu")){
-            document.querySelector(".intro").style.cssText = `padding-top: ${document.querySelector(".header").offsetHeight}px;`
-            document.querySelector(".menu").style.cssText = `padding-top: calc(${document.querySelector(".header").offsetHeight}px + 2.8125rem);`
-        }
-    }
-
-    if(document.querySelector(".burger") && document.querySelector(".header") && document.querySelector(".menu__line")){
+    if(document.querySelector(".burger") && document.querySelector(".header")){
         document.documentElement.addEventListener("click", (e) => {
             if(e.target.closest(".burger")){
                 document.body.classList.toggle("_locked");
                 document.querySelector(".header").classList.toggle("_active");
                 document.querySelector(".header").classList.add("_interactive");
-                if(document.querySelector(".header").classList.contains("_active")){
-                    document.querySelector(".menu__line").style.cssText = `top: ${document.querySelector(".header").offsetHeight}px;`
-                }
             }
         });
     }
