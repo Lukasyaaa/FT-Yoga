@@ -3,19 +3,6 @@ document.addEventListener("DOMContentLoaded", () => {
         document.querySelector(".header").classList.add("_scrolled");
     }
 
-    let isSmaller1098px = false;
-    let isSmaller992px = false;
-    let isSmaller768px = false;
-    if(document.querySelector(".intro__subimage")){
-        isSmaller1098px = getComputedStyle(document.querySelector(".intro__subimage")).display == "none";
-    }
-    if(document.querySelector(".intro__image")){
-        isSmaller992px = getComputedStyle(document.querySelector(".intro__image")).display == "none"
-    }
-    if(document.querySelector(".menu")){
-        isSmaller768px = getComputedStyle(document.querySelector(".menu")).position == "fixed";
-    }
-
     if(document.querySelector(".burger") && document.querySelector(".header")){
         document.documentElement.addEventListener("click", (e) => {
             if(e.target.closest(".burger")){
